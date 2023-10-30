@@ -22,4 +22,9 @@ h3 {
 
 p {
   color: azure;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 47%;
+  margin-right: 47%;
+  background-color: rgb(68, 101, 78);
 }
