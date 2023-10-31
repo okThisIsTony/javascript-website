@@ -16,6 +16,11 @@ h1 {
   color: azure;
 }
 
+h2 {
+  text-align: center;
+  color: azure;
+}
+
 h3 {
   color: rgb(92, 142, 106);
 }
