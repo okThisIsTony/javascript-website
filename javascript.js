@@ -1,6 +1,5 @@
 function onClick(inputName) {
   document.getElementById("output").innerHTML = "Welcome";
-  alert("Welcome, " + inputName + "!");
 
   const myVariableName = { name: "Username:" + inputName };
   console.log(myVariableName.name);
@@ -8,13 +7,16 @@ function onClick(inputName) {
   const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20";
   $.get(url, function (data, status) {
     if (status === "success") {
-      console.log(data.results.map(showNames));
+      const pokemonNames = data.results.map(showName);
+      console.log(pokemonNames);
+      document.getElementById("output").innerHTML = pokemonNames.join(" ");
     }
   });
+  alert("Welcome, " + inputName + "!");
 }
 
-function showNames(pokemon) {
-  return pokemon.names;
+function showName(pokemon) {
+  return pokemon.name;
 }
 
 function otherButton(inputName2) {
