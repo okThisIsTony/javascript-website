@@ -1,8 +1,4 @@
 function onClick(inputName) {
-  document.getElementById("output").innerHTML = "Welcome";
-
-  const myVariableName = { name: "Username:" + inputName };
-  console.log(myVariableName.name);
 
   const url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20";
   $.get(url, function (data, status) {
