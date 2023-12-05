@@ -9,9 +9,7 @@ function onClick(inputName) {
       document.getElementById("output").innerHTML = pokemonNames;
     }
   });
-  alert("Welcome, " + inputName + "!");
 }
-
 function otherButton(inputName2) {
   document.getElementById("output2").innerHTML = "Accepted";
   alert("Email accepted: " + inputName2);
