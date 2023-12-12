@@ -9,6 +9,7 @@ button {
   background-color: rgb(56, 56, 56);
   text-align: center;
   color: azure;
+  font-size: 20px;
 }
 
 h1 {
@@ -23,13 +24,4 @@ h2 {
 
 h3 {
   color: rgb(92, 142, 106);
-}
-
-p {
-  color: azure;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: 46%;
-  margin-right: 46%;
-  background-color: rgb(68, 101, 78);
 }
